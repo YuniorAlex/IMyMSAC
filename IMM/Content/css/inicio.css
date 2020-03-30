@@ -1,0 +1,43 @@
+.nav-link {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: darkcyan;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+}
+a {
+    color: darkcyan;
+}
+.portada {
+    position: absolute;
+}
+.Social {
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    background: #343a40 !important;
+    opacity: 0.8;
+}
+.rSocial {
+    font-size: 120px;
+    color: white;
+    height: 150px;
+}
+.actividades{
+    position: relative;
+    font-style: oblique;
+    color: darkblue;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+.Rsocial {
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+    margin-bottom: 0px;
+}
