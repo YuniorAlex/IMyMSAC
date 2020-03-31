@@ -15,20 +15,39 @@ body {
         background: #354452 !important;
         box-shadow: 0 -3px 10px #0094b2;
     }
+.navbar-brand {
+    font-size: 30px;
+}
 .nav-link {
-    border-style: solid;
+    /*border-style: solid;*/
     border-radius: 5px;
-    border-color: darkcyan;
+    /*border-color: darkcyan;
     margin-right: 2px;
     margin-left: 2px;
     border-bottom-width: 1px;
     border-left-width: 1px;
     border-top-width: 1px;
-    border-right-width: 1px;
+    border-right-width: 1px;*/
+}
+nav-link:hover{
+    background-color: darkcyan;
 }
 a {
     color: darkcyan;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all ease-out .2s;
 }
+    a.opcion:hover {
+        text-decoration: none;
+        font-size: 1.3rem;
+        border: 1px solid darkcyan;
+        color: white;
+        background-color: darkcyan;
+    }
 .portada {
     /*position: absolute;*/
     background-image: url(../../Image/encabezado1.jpg);
@@ -50,7 +69,6 @@ a {
     margin-bottom: 0px;
 }
 .actividades{
-    position: relative;
     font-style: oblique;
     color: darkblue;
     margin-bottom: 0px;
@@ -77,4 +95,24 @@ a {
     font-size: 120px;
     color: white;
     height: 150px;
+}
+.cuerpo {
+    background-image: url(../../Image/bg-talleres.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 60px);
+    padding: 60px 0px;
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+    color: #4d4d4d;
+    font-size: 18px;
+}
+.contenido {
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: linear-gradient(to bottom, rgba(10, 69, 97, 0.6) 0%,transparent 500%);
+    border-radius: 10px;
+    color: white;
 }

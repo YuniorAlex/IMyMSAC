@@ -18,10 +18,10 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-link">@Html.ActionLink("PROYECTOS", "Index", "Home")</li>
-                <li class="nav-link">@Html.ActionLink("CALENDARIO", "About", "Home")</li>
-                <li class="nav-link">@Html.ActionLink("CLIENTES", "Contact", "Home")</li>
-                <li class="nav-link">@Html.ActionLink("RSERVACIONES", "", "")</li>
+                <li class="nav-link">@Html.ActionLink("PROYECTOS", "Index", "Home", new { @class = "opcion" })</li>
+                <li class="nav-link">@Html.ActionLink("CALENDARIO", "About", "Home", new { @class = "opcion" })</li>
+                <li class="nav-link">@Html.ActionLink("CLIENTES", "Contact", "Home", new { @class = "opcion" })</li>
+                <li class="nav-link">@Html.ActionLink("RESERVACIONES", "", "", new { @class = "opcion" })</li>
             </ul>
         </div>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -37,14 +37,14 @@
             <p class="actividades"><b>Diseño - Fabricación - Montaje - Mantenimiento</b></p>
         </div>
     </section>
-    <main>
+    <main class="cuerpo">
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
         </footer>
     </main>
-
+    
     <script src="~/Scripts/js/inicio.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
