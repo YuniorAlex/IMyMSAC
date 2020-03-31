@@ -7,10 +7,10 @@
     <title>@ViewBag.Title - IMyMSAC</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="~/Content/css/inicio.css"/>
+    <link rel="stylesheet" href="~/Content/css/inicio.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <!--<img src="~/Image/logo.jpg" style="" />-->
         @Html.ActionLink("IMyMSAC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,14 +29,23 @@
             <li class="nav-link">@Html.ActionLink("INGRESAR", "", "")</li>
         </ul>
     </nav>
-    <div>
+    <section class="portada">
+        <div class="social">
+            <h1 class="nombre">IM&M S.A.C</h1>
+            <p class="actividades"><b>Servicio de Mantenimiento Industrial</b></p>
+            <p class="Rsocial"><b>INTEGRACIÓN DE MANUFATURA Y MANTENIMIENTO S.A.C</b></p>
+            <p class="actividades"><b>Diseño - Fabricación - Montaje - Mantenimiento</b></p>
+        </div>
+    </section>
+    <main>
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
         </footer>
-    </div>
+    </main>
 
+    <script src="~/Scripts/js/inicio.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

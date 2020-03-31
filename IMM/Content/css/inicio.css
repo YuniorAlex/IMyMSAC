@@ -1,3 +1,20 @@
+body {
+    /*font-family: 'Pathway Gothic One', sans-serif;*/
+}
+.navbar {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,transparent 500%);
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    transition-property: height, box-shadow;
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+}
+    .navbar.deslizar {
+        height: 60px;
+        background: #354452 !important;
+        box-shadow: 0 -3px 10px #0094b2;
+    }
 .nav-link {
     border-style: solid;
     border-radius: 5px;
@@ -13,19 +30,24 @@ a {
     color: darkcyan;
 }
 .portada {
-    position: absolute;
-}
-.Social {
-    position: relative;
-    text-align: center;
-    padding-top: 50px;
-    background: #343a40 !important;
-    opacity: 0.8;
-}
-.rSocial {
-    font-size: 120px;
+    /*position: absolute;*/
+    background-image: url(../../Image/encabezado1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    height: 150px;
+}
+.social {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.nombre {
+    font-size: 120px;
+    margin-bottom: 0px;
 }
 .actividades{
     position: relative;
@@ -41,4 +63,18 @@ a {
     font-style: italic;
     color: white;
     margin-bottom: 0px;
+}
+
+.Social {
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    background: #343a40 !important;
+    opacity: 0.8;
+}
+
+.rSocial {
+    font-size: 120px;
+    color: white;
+    height: 150px;
 }
